@@ -1,0 +1,36 @@
+@media(max-width:375px) {
+    .block {
+        width: 343px;
+        height: 486px;
+
+        &__date {
+            width: 87px;
+        }
+
+        &__input {
+            width: 87px;
+            height: 54px;
+        }
+
+        padding: 48px 24px 48px 24px;
+
+        #ageButton {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 64px;
+            height: 64px;
+            bottom: -32px;
+        }
+
+        form {
+            padding-bottom: 63px;
+        }
+    }
+
+    .dates {
+        &__block {
+            font-size: 56px;
+        }
+    }
+
+}

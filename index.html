@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="block">
+    <form>
+      <div class="block__date">
+        <label for="day">Day</label>
+        <input type="text" id="day" class="block__input" placeholder="dd">
+        <p class="show">Must be a valid day</p>
+      </div>
+      <div class="block__date">
+        <label for="month">Month</label>
+        <input type="text" id="month" class="block__input" placeholder="mm">
+        <p class="show">Must be a valid month</p>
+      </div>
+      <div class="block__date">
+        <label for="year">Year</label>
+        <input type="text" id="year" class="block__input" placeholder="yyyy">
+        <p class="show">Must be a valid year</p>
+      </div>
+      <div id="ageButton"></div>
+    </form>
+    <div class="dates">
+      <div class="dates__block">
+        <span id="countYears" class="dates__count"></span>
+        <p class="dates__text">years</p>
+      </div>
+      <div class="dates__block">
+        <span id="countMonths" class="dates__count"></span>
+        <p class="dates__text">month</p>
+      </div>
+      <div class="dates__block">
+        <span id="countDays" class="dates__count"></span>
+        <p class="dates__text">days</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+.block {
+  width: 840px;
+  height: 651px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 56px;
+  border-radius: 24px 24px 200px 24px;
+}
+.block form {
+  display: flex;
+  gap: 20px;
+  border-bottom: hsl(0, 0%, 94%) 1px solid;
+  padding-bottom: 47px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.block #ageButton {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  background-color: hsl(259, 100%, 65%);
+  right: 0;
+  bottom: -50px;
+  border-radius: 50%;
+  background-image: url(../assets/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.block #ageButton:hover {
+  background-color: #151515;
+}
+.block label {
+  font-size: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+}
+.block__date {
+  width: 160px;
+}
+.block__input {
+  width: 160px;
+  height: 72px;
+  border: hsl(0, 0%, 94%) 1px solid;
+  border-radius: 7px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+.block .error {
+  border: hsl(0, 100%, 67%) 1px solid;
+}
+.block .error label {
+  color: hsl(0, 100%, 67%);
+}
+.block .show {
+  font-size: 14px;
+  font-style: italic;
+  padding-top: 5px;
+  color: hsl(0, 100%, 67%);
+  display: none;
+  font-weight: 400;
+}
+
+.dates__block {
+  display: flex;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: -2.08px;
+  font-style: italic;
+  font-size: 104px;
+}
+.dates__count {
+  color: hsl(259, 100%, 65%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+  font-family: "Poppins";
+}
+
+@media (max-width: 375px) {
+  .block {
+    width: 343px;
+    height: 486px;
+    padding: 48px 24px 48px 24px;
+  }
+  .block__date {
+    width: 87px;
+  }
+  .block__input {
+    width: 87px;
+    height: 54px;
+  }
+  .block #ageButton {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    bottom: -32px;
+  }
+  .block form {
+    padding-bottom: 63px;
+  }
+  .dates__block {
+    font-size: 56px;
+  }
+}/*# sourceMappingURL=style.css.map */

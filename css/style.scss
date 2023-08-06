@@ -1,0 +1,97 @@
+.block {
+    width: 840px;
+    height: 651px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 56px;
+    border-radius: 24px 24px 200px 24px;
+
+    form {
+        display: flex;
+        gap: 20px;
+        border-bottom: hsl(0, 0%, 94%) 1px solid;
+        padding-bottom: 47px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    #ageButton{
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        background-color: hsl(259, 100%, 65%);
+        right: 0;
+        bottom: -50px;
+        border-radius: 50%;
+        background-image: url(../assets/images/icon-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #ageButton:hover{
+        background-color: #151515;
+    }
+
+    label {
+        font-size: 14px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        color: hsl(0, 1%, 44%);
+    }
+
+    &__date {
+        width: 160px;
+    }
+
+    &__input {
+        width: 160px;
+        height: 72px;
+        border: hsl(0, 0%, 94%) 1px solid;
+        border-radius: 7px;
+        padding-left: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .error {
+        border: hsl(0, 100%, 67%) 1px solid;
+    }
+
+    .error label {
+        color: hsl(0, 100%, 67%);
+    }
+
+    .show {
+        font-size: 14px;
+        font-style: italic;
+        padding-top: 5px;
+        color: hsl(0, 100%, 67%);
+        display: none;
+        font-weight: 400;
+    }
+}
+
+.dates {
+    &__block {
+        display: flex;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: -2.08px;
+        font-style: italic;
+        font-size: 104px;
+    }
+
+    &__count {
+        color: hsl(259, 100%, 65%);
+    }
+}
+
+@import "main";
+@import "media";
